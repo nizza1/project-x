@@ -1,0 +1,11 @@
+.container {
+    min-height: 700px;
+    padding: 0 1rem ;
+}
+
+.innerContainer {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding: 100px 0;
+}
