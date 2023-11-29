@@ -1,0 +1,12 @@
+.container {
+
+}
+
+.innerContainer {
+    max-width: var(--max-width);
+    margin-inline: auto;
+/*     padding: 2rem  1rem 2rem; */
+    min-height: 900px;
+
+    transition-duration: .4s;
+}
