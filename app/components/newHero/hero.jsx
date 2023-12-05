@@ -8,14 +8,14 @@ import styles from './styles.module.scss'
 /* const ReactPlayer = dynamic(() => import('react-player'), { ssr: false }); */
 import VideoPlayer from '../videoPlayer/videoPlayer'
 
-const video = 'hero.mp4'
+const heroVideo = '/hero.mp4'
 
 const Hero = () => {
   return (
     <div className={styles.container}>
             
         <div className={styles.innerContainer}>
-            <VideoPlayer  video={video}/>
+            <VideoPlayer  video={heroVideo}/>
         </div>
     </div>
   )

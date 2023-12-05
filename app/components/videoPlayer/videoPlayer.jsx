@@ -1,18 +1,16 @@
 "use client"
 
 import React from 'react'
-import ReactPlayer from 'react-player'
+
 import styles from './styles.module.scss'
 const VideoPlayer = ({video}) => {
   return (
-  
-            <ReactPlayer url={video} playing={true} loop={true} /* controls={true} */ muted={true}
-            className={styles.videoContainer}
-
-            width='100%'
-            height='100%'
-            />
-  
+          <div className={styles.videoContainer}>
+            <video autoPlay loop muted={true}
+            className={styles.video} /* style={{ width: '100%', height: '100%' }} */>
+              <source src={video} />
+            </video>
+           </div>
   )
 }
 
