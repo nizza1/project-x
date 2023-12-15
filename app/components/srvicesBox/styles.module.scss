@@ -32,11 +32,11 @@
             left: -100%;
             top: -100%;
            
-            animation: borderAnimation 8s infinite linear;
+            animation: borderAnimation 5s infinite linear;
           /*   background: linear-gradient(180deg, rgba(176, 2, 83, 0.894) 10%,rgb(159, 104, 254)) 50%; */
           /*  background: linear-gradient(180deg, rgba(222,1,128,1) 46%, rgba(95,28,255,1) 46%); */
          /*  background: conic-gradient(from 3.1416rad at 10% 50%, #ff9191, rgba(0, 0, 0, 0.749) , rgb(244, 242, 255)); */
-           background: conic-gradient(
+         /*   background: conic-gradient(
             #ffffffab,
             #ffffff7e,
             #ffffff64,
@@ -44,6 +44,14 @@
             #ffffff0f,
             #ffffff00,
             #ffffffa9
+          ); */
+          background: conic-gradient(
+            #ffa703,
+         
+            #b419f7,
+            #d000c2,
+          
+            #ffa703
           );
            }
            @keyframes borderAnimation {
