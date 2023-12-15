@@ -1,22 +1,61 @@
 .container {
     max-width: var(--max-width);
     margin-inline: auto;
-  /*   padding: 50px 0; */
+
     .boxesContainer {
         background-color: #01010101;
- /*        padding: .6rem 1.2rem; */
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-   /*      gap: 1rem; */
         justify-content: center;
+        gap: .5rem;
+        padding-top: 3rem;
         
         .box {
-            width : calc(50% - 0rem);
+            position: relative;
+            width : calc(50% - .5rem);
             height: 400px;
-            background-color: rgba(255, 255, 255, 0.11);
-          /*   border-radius: 1rem; */
-           /*  padding: 1rem; */
+            overflow: hidden;
+            border-radius: 1.1rem;
+
+           .inBox {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+
+           }
+           .inBox::before {
+            content: '';
+            position: absolute;
+            width: 300%;
+            height: 300%;
+            left: -100%;
+            top: -100%;
+           
+            animation: borderAnimation 8s infinite linear;
+          /*   background: linear-gradient(180deg, rgba(176, 2, 83, 0.894) 10%,rgb(159, 104, 254)) 50%; */
+          /*  background: linear-gradient(180deg, rgba(222,1,128,1) 46%, rgba(95,28,255,1) 46%); */
+         /*  background: conic-gradient(from 3.1416rad at 10% 50%, #ff9191, rgba(0, 0, 0, 0.749) , rgb(244, 242, 255)); */
+           background: conic-gradient(
+            #ffffffab,
+            #ffffff7e,
+            #ffffff64,
+            #ffffff26,
+            #ffffff0f,
+            #ffffff00,
+            #ffffffa9
+          );
+           }
+           @keyframes borderAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+         
+          
         }
     }
 
@@ -35,3 +74,10 @@
         }
     }
 }
+
+
+
+
+
+
+

@@ -41,7 +41,7 @@ const renderTitle = (title, highlightWord) => {
       // Check if the word is the one to be highlighted
       if (word === highlightWord) {
           // Add a space after the highlighted word
-          return <Highlight text={word} /> ;
+          return <Highlight text={word} key={`w${word}`}/> ;
       } else {
           // Add a space after regular words
           return <span key={index}> {word} </span>;

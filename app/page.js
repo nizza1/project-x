@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <NewHero />
-    <ServicesBox />
+     <ServicesBox />
 {/*       <Header /> */}
     {/*   <Hero /> */}
     {/*   <Services /> */}

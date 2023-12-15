@@ -43,7 +43,7 @@ body {
 body {
   overflow-x: hidden;
  /*  background: var(--background-gradient); */
- background-color: black;
+ background-color: #0F0F0F;
   background-attachment: fixed; 
   background-size: cover; 
   color: var(--text-color);
