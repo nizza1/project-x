@@ -1,6 +1,6 @@
 "use client"
 
-import React , {useState} from 'react'
+import React , {useState ,useRef } from 'react'
 import styles from './styles.module.css'
 
 //icons 
@@ -8,7 +8,10 @@ import {MdAlternateEmail} from 'react-icons/md'
 import {BsTelephoneOutbound} from 'react-icons/bs'
 import {RxAvatar} from 'react-icons/rx'
 import {AiOutlineMessage} from 'react-icons/ai'
+
 const Contact = () => {
+
+    const strockRef = useRef(null)
 
     const [formData , setFormData] = useState({
         email : '',
@@ -16,13 +19,14 @@ const Contact = () => {
         name : '',
         message : '',
       })
-    
+
       const handleChange = (e) => {
         const {name , value} = e.target;
         setFormData({
           ...formData,
           [name]: value,
         })
+
       }
     
       const handleSubmit = async(e) => {
@@ -48,12 +52,14 @@ const Contact = () => {
           alert('Error:'+ error);
         }
       }
+
+
   return (
     <div className={styles.container}>
         <div className={styles.innerContainer}>
 
             
-            <h1 className={styles.title}>contact </h1>
+            <h1 ref={strockRef} className={styles.title}> KONTAKT</h1>
 
             <form className={styles.form} onSubmit={handleSubmit}>
        

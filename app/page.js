@@ -6,6 +6,7 @@ import styles from './page.module.css'
 import Header from './components/headerBar/header'
 import Hero from './components/heroSection/hero'
 import Contact from './components/contact/contact'
+import About from './components/about/about'
 /* import Services from './components/serv/services' */
 
 import NewHero from './components/newHero/hero'
@@ -14,8 +15,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <NewHero />
-     <ServicesBox />
+{/*      <ServicesBox /> */}
+     <About />
      <Contact />
+  
 {/*       <Header /> */}
     {/*   <Hero /> */}
     {/*   <Services /> */}

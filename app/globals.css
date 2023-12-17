@@ -47,6 +47,7 @@ body {
   background-attachment: fixed; 
   background-size: cover; 
   color: var(--text-color);
+  font-family: sans-serif ;
 
 }
 
