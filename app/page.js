@@ -5,6 +5,7 @@ import styles from './page.module.css'
 //components
 import Header from './components/headerBar/header'
 import Hero from './components/heroSection/hero'
+import Contact from './components/contact/contact'
 /* import Services from './components/serv/services' */
 
 import NewHero from './components/newHero/hero'
@@ -14,6 +15,7 @@ export default function Home() {
     <main className={styles.main}>
       <NewHero />
      <ServicesBox />
+     <Contact />
 {/*       <Header /> */}
     {/*   <Hero /> */}
     {/*   <Services /> */}

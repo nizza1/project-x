@@ -1,0 +1,123 @@
+.container {
+    min-height: 400px;
+    padding-inline: 1rem;
+}
+
+.innerContainer {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding: 50px 0;
+}
+/* title */
+
+/* Width and color values */
+.title {
+    color: #0F0F0F;
+    -webkit-text-stroke: 1px aliceblue;
+    text-stroke: 1px aliceblue;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+
+/* form  */
+
+.block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+  }
+  
+
+  
+  .form {
+    font-size: 1rem;
+    width: 600px;
+    max-width: 100%; 
+    margin-inline: auto;
+ /*    background-color: var(--background-color);
+    padding: 1rem 2rem  3rem 5rem;
+    border-radius: 1rem; */
+  }
+  
+  .form input {
+    font-size: .9rem;
+    margin: 10px 0 10px 0px;
+    padding: .7rem 6rem .7rem 3rem;
+    background-color: transparent;
+/*     background-color: rgba(14, 14, 14, 0.083); */
+    border: none;
+    outline: none;
+    border: 1px solid aliceblue;
+    border-radius: 2rem;
+    color: aliceblue;
+
+  }
+
+  .form input::placeholder {
+    font-style: italic;
+    font-size: .9rem;
+    opacity: .8;
+
+
+  }
+
+  .form textarea::placeholder {
+    font-style: italic;
+    font-size: .9rem;
+    opacity: .8;
+
+  
+  }
+
+  
+  .form textarea {
+    margin: 10px 0 10px 0px;
+    padding: .7rem 6rem .7rem 3rem;
+    font-size: .9rem;
+    font-family: var(--font-ralway);
+    background-color: transparent;
+   /*  background-color: rgba(14, 14, 14, 0.083); */
+    border: none;
+    outline: none;
+    border: 1px solid aliceblue;
+    border-radius: 1rem;
+    color : aliceblue;
+  }
+  
+  
+  .name div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .block button {
+    margin-top: 1rem;
+    padding: 10px;
+    font-size: 1.3rem;
+    width: 30%;
+    border: 1px solid aliceblue;
+    border-radius: 2rem;
+    background: transparent;
+    color: aliceblue;
+  }
+
+  
+  .textarea {
+    resize: none;
+  }
+
+  .iconss {
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    opacity: .7;
+    color: var(--blue-dark);
+    transition-duration: .2s;
+    pointer-events: none;
+  }
+
+
