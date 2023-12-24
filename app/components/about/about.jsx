@@ -1,11 +1,15 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Image from 'next/image'
+
+import AnimatedText from '../animatedText/animatedText'
 const About = () => {
   return (
     <div className={styles.container}>
         <div className={styles.innerCo}>
-            
+           {/*  <h1>
+                <AnimatedText text='WER SIND WIR?'/>
+            </h1> */}
             <h1 className={styles.title}>ABOUT</h1>
 
             <div className={styles.profilesCo}>

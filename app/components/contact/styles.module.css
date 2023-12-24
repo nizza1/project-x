@@ -6,7 +6,7 @@
 .innerContainer {
     max-width: var(--max-width);
     margin-inline: auto;
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 /* title */
 
@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
 
     -webkit-text-stroke:2px #fafafad3;
     -webkit-text-fill-color: transparent;
@@ -60,7 +61,7 @@
 /*     background-color: rgba(14, 14, 14, 0.083); */
     border: none;
     outline: none;
-    border: 1px solid aliceblue;
+    border: 1px solid var(--border-color);
     border-radius: 2rem;
     color: aliceblue;
 
@@ -92,7 +93,7 @@
    /*  background-color: rgba(14, 14, 14, 0.083); */
     border: none;
     outline: none;
-    border: 1px solid aliceblue;
+    border: 1px solid var(--border-color);
     border-radius: 1rem;
     color : aliceblue;
   }
@@ -105,20 +106,22 @@
   
   .block button {
     margin-top: 1rem;
-    padding: 10px;
+    padding: .9rem 1.2rem;
     font-size: 1.3rem;
     width: 30%;
-    border: 1px solid aliceblue;
+    border: none;
+/*     border: 1px solid aliceblue; */
     border-radius: 2rem;
     background: transparent;
     color: aliceblue;
     transition-duration: .3s;
+    background: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
   }
 
   .block button:hover {
     background-color: aliceblue;
     color: #0F0F0F;
-    border: 1px solid transparent;
+    transform: scale(.96);
   }
 
   

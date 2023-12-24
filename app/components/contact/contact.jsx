@@ -3,6 +3,9 @@
 import React , {useState ,useRef } from 'react'
 import styles from './styles.module.css'
 
+import AnimatedText from '../animatedText/animatedText'
+ 
+
 //icons 
 import {MdAlternateEmail} from 'react-icons/md'
 import {BsTelephoneOutbound} from 'react-icons/bs'
@@ -60,6 +63,7 @@ const Contact = () => {
 
             
             <h1 ref={strockRef} className={styles.title}> KONTAKT</h1>
+         {/*    <h1><AnimatedText text='KONTAKT'/></h1> */}
 
             <form className={styles.form} onSubmit={handleSubmit}>
        

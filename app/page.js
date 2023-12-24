@@ -9,19 +9,19 @@ import Contact from './components/contact/contact'
 import About from './components/about/about'
 /* import Services from './components/serv/services' */
 
+
 import NewHero from './components/newHero/hero'
 import ServicesBox from './components/srvicesBox/services'
 export default function Home() {
   return (
     <main className={styles.main}>
       <NewHero />
-{/*      <ServicesBox /> */}
+     {/* <ServicesBox /> */}
      <About />
      <Contact />
-  
 {/*       <Header /> */}
-    {/*   <Hero /> */}
-    {/*   <Services /> */}
+     {/*  <Hero /> */}
+     {/*  <Services /> */}
     </main>
   )
 }
