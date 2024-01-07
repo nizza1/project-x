@@ -58,7 +58,7 @@ const Contact = () => {
 
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='contact'>
         <div className={styles.innerContainer}>
 
             

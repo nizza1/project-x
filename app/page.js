@@ -3,7 +3,6 @@ import styles from './page.module.css'
 
 
 //components
-import Header from './components/headerBar/header'
 import Hero from './components/heroSection/hero'
 import Contact from './components/contact/contact'
 import About from './components/about/about'
@@ -19,7 +18,7 @@ export default function Home() {
      {/* <ServicesBox /> */}
      <About />
      <Contact />
-{/*       <Header /> */}
+      
      {/*  <Hero /> */}
      {/*  <Services /> */}
     </main>
