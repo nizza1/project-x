@@ -9,8 +9,20 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Navlist = ({isActive}) => {
 
+  const handleScroll = (href) => {
+    // Prevent the default behavior of the anchor tag
+   /*  toggleIsActive(); */
+    if (href) {
+      const targetId = href.replace(/.*\#/, "");
+
+      const elem = document.getElementById(targetId);
+      elem?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
-    <div className={`${styles.links} ${isActive ? null : styles.close}`}>
+    <div className={`${styles.links} ${isActive ? '' : styles.close}`}>
                 <button 
                className={styles.link}
                onClick={()=> {

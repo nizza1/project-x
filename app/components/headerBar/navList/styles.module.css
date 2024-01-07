@@ -37,6 +37,12 @@
     transform: scale(.95);
 }
 @media (max-width: 700px) {
+
+.close {
+   
+    transform: translateX(18rem);
+    opacity: 0;
+}
   .links {
     flex-direction: column;
     align-items: start;
@@ -54,14 +60,8 @@
 
   }
   .social {
-/*     padding-left: 0; */
+
     margin-left: 0;
     border-left: none;
   }
-}
-
-.close {
-   
-    transform: translateX(18rem);
-    opacity: 0;
 }
