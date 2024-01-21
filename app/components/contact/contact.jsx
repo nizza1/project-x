@@ -12,7 +12,15 @@ import {BsTelephoneOutbound} from 'react-icons/bs'
 import {RxAvatar} from 'react-icons/rx'
 import {AiOutlineMessage} from 'react-icons/ai'
 
-const Contact = () => {
+
+import {en , de} from './data'
+
+
+const Contact = ({ language}) => {
+
+  const lang = language === 'de' ? de : en ;
+
+  const data = lang
 
     const strockRef = useRef(null)
 
@@ -62,18 +70,18 @@ const Contact = () => {
         <div className={styles.innerContainer}>
 
             
-            <h1 ref={strockRef} className={styles.title}> KONTAKT</h1>
-         {/*    <h1><AnimatedText text='KONTAKT'/></h1> */}
+            <h1 ref={strockRef} className={styles.title}> {data.title}</h1>
+       
 
             <form className={styles.form} onSubmit={handleSubmit}>
        
         <div className={`${styles.email} ${styles.block}`}>
-          <label  htmlFor="frm-email">Email</label>
+          <label  htmlFor="frm-email">{data.email}</label>
           <input
             id="frm-email"
             type="email"
             name="email"
-            placeholder="e.g steve@example.com" 
+            placeholder={data.pl_email} 
             autoComplete="email"
             required
             value={formData.email} 
@@ -82,10 +90,10 @@ const Contact = () => {
           <MdAlternateEmail className={styles.iconss}/>
         </div>
         <div className={`${styles.phone} ${styles.block}`}>
-          <label htmlFor="frm-phone">Phone</label>
+          <label htmlFor="frm-phone">{data.phone}</label>
           <input
             id="frm-phone"
-            placeholder="your phone number"
+            placeholder={data.pl_phone}
             type="text"
             name="phone"
             autoComplete="tel"
@@ -97,10 +105,10 @@ const Contact = () => {
         </div>
         <div className={`${styles.name} ${styles.block}`}>
           <div>
-            <label htmlFor="frm-first"> Name</label>
+            <label htmlFor="frm-first"> {data.name}</label>
             <input
               id="frm-first"
-              placeholder="e.g steve"
+              placeholder={data.pl_name}
               type="text"
               name="name"
               autoComplete="given-name"
@@ -113,8 +121,9 @@ const Contact = () => {
      
         </div>
         <div className={`${styles.message} ${styles.block}`}>
-          <label htmlFor="frm-message">Message</label>
-          <textarea className={styles.textarea} id="frm-message" rows="6" name="message" placeholder="your message"
+          <label htmlFor="frm-message">{data.message}</label>
+          <textarea className={styles.textarea} id="frm-message" rows="6" name="message" 
+          placeholder={data.pl_message}
           value={formData.message} 
           onChange={handleChange} 
           ></textarea>
@@ -122,7 +131,7 @@ const Contact = () => {
         </div>
         <div className={`${styles.button} ${styles.block}`}>
          
-        <button>SENDEN</button>
+        <button>{data.send}</button>
         </div>
         
            </form>

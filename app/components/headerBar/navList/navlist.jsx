@@ -4,11 +4,14 @@ import styles from './styles.module.css'
 
 //icons
 import { FaYoutube ,FaInstagramSquare , FaLinkedin} from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+
+import {en , de} from './data'
 
 
-const Navlist = ({isActive}) => {
+const Navlist = ({isActive , language}) => {
 
+  const lang = language === 'de' ? de : en ;
+  const data = lang
   const handleScroll = (href) => {
     // Prevent the default behavior of the anchor tag
    /*  toggleIsActive(); */
@@ -27,13 +30,13 @@ const Navlist = ({isActive}) => {
                className={styles.link}
                onClick={()=> {
                   handleScroll('#contact');
-                }} > contact</button>
+                }} > {data.contact}</button>
 
                  <button 
                className={styles.link}
                onClick={()=> {
                   handleScroll('#about');
-                }} > about</button>
+                }} > {data.about}</button>
 
                 <div className={styles.social}>
                < FaYoutube className={styles.socialIcon}/>

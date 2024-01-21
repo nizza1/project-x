@@ -2,15 +2,22 @@ import React from 'react'
 import styles from './styles.module.css'
 import Image from 'next/image'
 
+
+import {en , de} from './data'
+
+
 import AnimatedText from '../animatedText/animatedText'
-const About = () => {
+const About = ({language}) => {
+    const lang = language === 'de' ? de : en ;
+    const data = lang;
+
   return (
     <div className={styles.container} id='about'>
         <div className={styles.innerCo}>
            {/*  <h1>
                 <AnimatedText text='WER SIND WIR?'/>
             </h1> */}
-            <h1 className={styles.title}>ABOUT</h1>
+            <h1 className={styles.title}>{data.title}</h1>
 
             <div className={styles.profilesCo}>
 

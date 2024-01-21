@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 
 import NavList from '../navList/navlist'
 
-const NavButton = () => {
+const NavButton = ({language}) => {
 
   const [isActive , setIsActive] = useState(false);
 
@@ -27,7 +27,7 @@ const NavButton = () => {
 
   
  
-        <NavList isActive={isActive}/>
+        <NavList isActive={isActive} language={language}/>
 
     </div>
 

@@ -9,6 +9,37 @@
     justify-content: space-between;
 }
 
+.navContainer {
+    display: flex;
+    align-items: center;
+    column-gap: .8rem;
+}
+
+.langSwitcher {
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+}
+.langButton {
+    background: transparent;
+    color: aliceblue;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+/*     border: 1px solid aliceblue;
+    border-radius: .5rem ;
+    padding: .5rem .3rem; */
+}
+
+.langButton:first-of-type {
+    border-right: 1px solid aliceblue;
+    padding-right:.5rem ;
+}
+
+.selectedLang {
+    color: rgb(119, 69, 255);
+}
+
 
 
 

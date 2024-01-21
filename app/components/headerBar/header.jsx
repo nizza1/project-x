@@ -3,8 +3,8 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-
-
+import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
 
 //components 
@@ -13,6 +13,18 @@ import Navlist from './navList/navlist';
 
 const Header = () => {
 
+const router = useRouter();
+
+ const path = usePathname();
+ const pathParts = path.split('/');
+ const lang = pathParts[1] || 'en';
+
+const switchLocale = (newLanguage) => {
+  const newPath = `/${newLanguage}${path.substring(3)}`;
+  router.push(newPath);
+};
+
+ 
 
   return (
     <div className={styles.container}>
@@ -22,12 +34,19 @@ const Header = () => {
             </div>
 
             <div className={styles.navContainer}>
-                <NavButton />
+                <div className={styles.langSwitcher}>
+                    <button
+                    onClick={() => switchLocale('en')} className={`${styles.langButton} ${lang === 'en' ? styles.selectedLang : ''}`}>EN</button>
+                    <button 
+                    onClick={() => switchLocale('de')}
+                    className={`${styles.langButton} ${lang === 'de' ? styles.selectedLang : ''}`}>DE</button>
+                </div>
+                <NavButton language={lang}/>
             </div>
 
 
             <div className={styles.navListCo}>
-            <Navlist />
+            <Navlist language={lang} />
             </div>
             
 

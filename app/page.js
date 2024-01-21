@@ -16,8 +16,8 @@ export default function Home() {
     <main className={styles.main}>
       <NewHero />
      {/* <ServicesBox /> */}
-     <About />
-     <Contact />
+     <About language='en'/>
+     <Contact language='en' />
       
      {/*  <Hero /> */}
      {/*  <Services /> */}
