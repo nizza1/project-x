@@ -13,7 +13,7 @@ const  Blob = async ({vid}) => {
       const { url } = blobs[0];
 
 
-  const token = process.env.BLOB_READ_WRITE_TOKEN;
+/*   const token = process.env.BLOB_READ_WRITE_TOKEN; */
 
 
 
