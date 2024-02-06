@@ -7,13 +7,11 @@ const  Blob = async ({vid}) => {
 
     const {blobs} = await list({
         prefix: vid,
-        limit: 1
+        limit: 1, 
+        token: process.env.BLOB_READ_WRITE_TOKEN
       });
       
       const { url } = blobs[0];
-
-
-/*   const token = process.env.BLOB_READ_WRITE_TOKEN; */
 
 
 
