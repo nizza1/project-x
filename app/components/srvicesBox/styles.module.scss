@@ -17,11 +17,21 @@
             height: 400px;
             overflow: hidden;
             border-radius: 1.1rem;
-
+            z-index: 2;
            .inBox {
             position: absolute;
             inset: 0;
             overflow: hidden;
+            z-index: 3;
+
+            .videoCo {
+                position: absolute;
+                z-index: 11;
+                inset: 4px;
+                border-radius: 1rem ;
+                overflow: hidden;
+
+            }
 
            }
            .inBox::before {
@@ -31,6 +41,7 @@
             height: 300%;
             left: -100%;
             top: -100%;
+            z-index: 6;
            
             animation: borderAnimation 8s infinite linear;
            /*  background: linear-gradient(180deg, rgba(176, 2, 83, 0.894) 10%,rgb(159, 104, 254)) 50%; */

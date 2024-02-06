@@ -1,12 +1,23 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+import localFont from 'next/font/local'
+ 
+
+
 
 //components 
 import Footer from './components/footer/footer'
 import Header from './components/headerBar/header'
 
 const inter = Inter({ subsets: ['latin'] })
+const montserrat = localFont({ src: './fonts/Montserrat/Montserrat-VariableFont_wght.ttf' })
+
+const roboto = localFont({ 
+  src: './fonts/Roboto/Roboto-Regular.ttf',
+  variable: '--roboto',
+ })
+
 
 export const metadata = {
   title: 'Project X',
@@ -16,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${montserrat.className} ${roboto.variable}`}>
       <Header />
         {children}
         <Footer />

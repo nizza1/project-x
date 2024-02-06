@@ -1,33 +1,46 @@
 import React from 'react'
 import styles from './styles.module.scss'
-import Player from '../videoPlayer/playerBox/player'
+import Blob from '../videoPlayer/blob/blob'
 
-const video = '/domi.mp4'
+const video = 'domi.mp4'
+
 
 const Services = () => {
   return (
     <div className={styles.container}>
+
+     
        <div className={styles.boxesContainer}>
 
         <div className={styles.box}> 
+    
           <div className={styles.inBox}>
-           <Player video={video} />
+            <div className={styles.videoCo}>
+            <Blob vid={video} />
+            </div>
+        
           </div>
         </div>
 
         <div className={styles.box}> 
         <div className={styles.inBox}>
-           <Player video={video} />
+           <div className={styles.videoCo}>
+            <Blob vid={video}/>
+            </div>
           </div>
         </div>
         <div className={styles.box}> 
         <div className={styles.inBox}>
-           <Player video={video} />
+            <div className={styles.videoCo}>
+            <Blob vid={video}/>
+            </div>
           </div>
         </div>
         <div className={styles.box}> 
         <div className={styles.inBox}>
-           <Player video={video} />
+           <div className={styles.videoCo}>
+            <Blob vid={video}/>
+            </div>
           </div>
         </div>
 
