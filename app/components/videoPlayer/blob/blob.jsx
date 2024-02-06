@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { list } from '@vercel/blob';
 
@@ -17,8 +19,8 @@ const  Blob = async ({vid}) => {
 
   return (
     <div className={styles.co}>
-        {/* controls */}
-    <video autoPlay  loop preload="none" muted={false} aria-label="Video player" className={styles.video}
+        {/* controls loop preload="none" */}
+    <video autoPlay   muted={false} aria-label="Video player" className={styles.video}
    >
               <source src={url} type="video/mp4" />
      </video>
