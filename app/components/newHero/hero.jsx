@@ -2,11 +2,8 @@
 
 import React from 'react'
 import styles from './styles.module.scss'
-/* import dynamic from 'next/dynamic'; */
-/* import ReactPlayer from 'react-player' */
-
-/* const ReactPlayer = dynamic(() => import('react-player'), { ssr: false }); */
 import VideoPlayer from '../videoPlayer/videoPlayer'
+import NextPlayer from '../videoPlayer/blob/next-player/nextPlayer'
 
 const heroVideo = '/hero.mp4'
 
@@ -15,7 +12,8 @@ const Hero = () => {
     <div className={styles.container}>
             
         <div className={styles.innerContainer}>
-            <VideoPlayer  video={heroVideo}/>
+          <NextPlayer />
+           {/*  <VideoPlayer  video={heroVideo}/> */}
         </div>
     </div>
   )

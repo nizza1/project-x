@@ -1,15 +1,15 @@
 import React from 'react'
 import styles from './styles.module.scss'
 import Blob from '../videoPlayer/blob/blob'
-
+import NextVideo from '../videoPlayer/blob/next-player/nextPlayer'
 const video = 'domi-UqwBXYucriU2ORjxpBzb8rYq2AcgfW.webm'
-const video2 = 'domi.mp4'
+
 
 const Services = () => {
   return (
     <div className={styles.container}>
 
-    {/*  <Blob vid={'domi-UqwBXYucriU2ORjxpBzb8rYq2AcgfW.webm'}/> */}
+  {/*  <NextVideo /> */}
        <div className={styles.boxesContainer}>
 
         <div className={styles.box}> 
