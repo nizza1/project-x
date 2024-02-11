@@ -16,7 +16,7 @@ const  Blob = async ({vid}) => {
       console.log(blobs);
      /*  const { url } = blobs[0]; */
 
-
+     
 
   return (
     <div className={styles.co}>

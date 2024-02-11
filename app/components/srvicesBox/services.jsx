@@ -4,6 +4,8 @@ import Blob from '../videoPlayer/blob/blob'
 import NextVideo from '../videoPlayer/blob/next-player/nextPlayer'
 const video = 'domi-UqwBXYucriU2ORjxpBzb8rYq2AcgfW.webm'
 
+const vid2 = 'domi.mp4'
+
 
 const Services = () => {
   return (
@@ -16,7 +18,7 @@ const Services = () => {
     
           <div className={styles.inBox}>
             <div className={styles.videoCo}>
-            <Blob vid={video} />
+            <Blob vid={vid2} />
             </div>
         
           </div>
